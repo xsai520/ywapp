@@ -2,15 +2,17 @@
   <div class="home">
     <mt-swipe :auto="4000">
         <mt-swipe-item>
-          <ul class="leftWrap">
-            <li>
-              <span class="enName">Maintenance</span><span> 掌上运维</span>
-            </li>
-            <li><div>移动掌上运维 方便办公好助手</div></li>
-            <li><router-link to='/notice' class="goIn">欢迎进入</router-link></li>
-          </ul>
+          <div class="leftWrap">
+            <ul>
+              <li>
+                <span class="enName">Maintenance</span><span> 掌上运维</span>
+              </li>
+              <li><div>移动掌上运维 方便办公好助手</div></li>
+              <li><router-link to='/notice' class="goIn">欢迎进入</router-link></li>
+            </ul>
+          </div>
           <div class="rightWrap">
-            <img src="@/assets/img/swipe01.png" width="100%">
+            <img src="@/assets/img/swipe01.png" width="85%">
           </div>
         </mt-swipe-item>
     </mt-swipe>
@@ -108,16 +110,24 @@
     color: #fff;
   }
   .home .mint-swipe-item{
-    padding: 4% 5% 5% 7%;
     box-sizing: border-box;
   }
   .home .mint-swipe-items-wrap .leftWrap{
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      flex-wrap:wrap;
       color: #fff;
       float: left;
       width: 58%;
+      height:100%;
+  }
+  .home .mint-swipe-items-wrap .leftWrap >ul{
+    width: 100%;
+    padding-left:8%;
   }
   .home .mint-swipe-items-wrap .leftWrap li{
-    padding-top: 6%;
+    padding-top:6%;
     font-size: 0.35rem;
   }
   .home .mint-swipe-items-wrap .leftWrap span{
@@ -139,9 +149,12 @@
     color:#fff;
   }
   .home .mint-swipe-items-wrap .rightWrap{
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
       float: left;
       width: 42%;
-      padding-top: 2%;
+      height: 100%;
   }
   .home .list{
     width: 100%;
