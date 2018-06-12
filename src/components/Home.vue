@@ -16,7 +16,7 @@
     </mt-swipe>
     <ul class="list">
       <li v-for="(item ,index) in items" :key="index">
-        <a class="img"><img :src="item.img" width="100%"></a>
+        <a class="img"><img :src="item.img" width="90%"></a>
         <a class="text">{{item.text}}</a>
       </li>
     </ul>
@@ -28,7 +28,7 @@
             <div>设备管理<p>设备使用管理，设备录入数量更新</p></div>
           </div>
           <div class="img">
-            <img src="@/assets/img/sbgl.png" width="68%"/>
+            <img src="@/assets/img/sbgl.png" width="60%"/>
           </div>
         </div>
         <ul class="equipmentState">
@@ -108,7 +108,7 @@
     color: #fff;
   }
   .home .mint-swipe-item{
-    padding: 11% 5% 5% 7%;
+    padding: 4% 5% 5% 7%;
     box-sizing: border-box;
   }
   .home .mint-swipe-items-wrap .leftWrap{
@@ -117,7 +117,7 @@
       width: 58%;
   }
   .home .mint-swipe-items-wrap .leftWrap li{
-    padding-top: 0.4rem;
+    padding-top: 6%;
     font-size: 0.35rem;
   }
   .home .mint-swipe-items-wrap .leftWrap span{
@@ -141,6 +141,7 @@
   .home .mint-swipe-items-wrap .rightWrap{
       float: left;
       width: 42%;
+      padding-top: 2%;
   }
   .home .list{
     width: 100%;
@@ -152,7 +153,7 @@
     float: left;
     width: 25%;
     height:100%;
-    padding: 0.8em;
+    padding: .5em 0.8em;
     box-sizing: border-box;
   }
   .home .list .img{
@@ -187,7 +188,7 @@
     box-sizing: border-box;
   }
   .home .equipmentManage> .text{
-    padding:12%;
+    padding: 6% 12%;
   }
   .home  .equipmentManage> .img img{
     display: block;
