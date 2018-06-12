@@ -7,7 +7,7 @@
               <span class="enName">Maintenance</span><span> 掌上运维</span>
             </li>
             <li><div>移动掌上运维 方便办公好助手</div></li>
-            <li><router-link path='/notice' class="goIn">欢迎进入</router-link></li>
+            <li><router-link to='/notice' class="goIn">欢迎进入</router-link></li>
           </ul>
           <div class="rightWrap">
             <img src="@/assets/img/swipe01.png" width="100%">

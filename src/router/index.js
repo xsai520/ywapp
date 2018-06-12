@@ -14,7 +14,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/',
+      path: '/notice',
       name: 'Notice',
       component: Notice
     }
