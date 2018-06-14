@@ -312,8 +312,9 @@
     margin-bottom: 3%;
   }
   .monitor>main .type{
-    min-height: calc(68.3% - 5.1rem);
+    min-height: calc(100% - 5.1rem);
     background: #fff;
+    border-top: 1px solid #dadada;
   }
   .monitor>main .type ul li{
     height: 4rem;
