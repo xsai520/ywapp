@@ -12,7 +12,13 @@ import '@/assets/fonts/alibaba/iconfont.css'
 Vue.use(vueResource);
 
 Vue.config.productionTip = false
-
+router.beforeEach((to,from,next)=>{
+  if(to.path=="/"){
+    next({ path: './login' })
+  }else{
+    next()
+  }
+});
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
